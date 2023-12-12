@@ -1,53 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
 
-    <link rel="stylesheet" href="./assets/css/reset.css"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./assets/css/style.css"/>
+  <link rel="stylesheet" href="./assets/css/reset.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./assets/css/style.css" />
 
-    <title>Bootstrap Portfolio</title>
+  <title>Bootstrap Portfolio</title>
 </head>
+
 <body>
-    <nav>
-        <ul class="nav nav-tabs" style="width: 80%;">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Portfolio</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Topics</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">HTML</a></li>
-                <li><a class="dropdown-item" href="#">CSS</a></li>
-                <li><a class="dropdown-item" href="#">JAVASCRIPT</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">UI / UX</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">CV</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact Me</a>
-            </li>
-            <li>
-                <img class="justify-logo logo" src="assets/images/logo.png" alt="Hariri phonetic pronounciation = Ha-Ree-Ree"/>
-            </li>
+  <nav>
+    <ul class="nav nav-tabs flex-row" style="width: 80%;">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#about-me">Portfolio</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+          aria-expanded="false">Topics</a>
+        <ul class="dropdown-menu">
+          <!-- each link to section of this single page or as skills progress, a new html page focused on specific topic -->
+          <li><a class="dropdown-item" href="#Aboutme">About Me</a></li>
+          <li><a class="dropdown-item" href="#HTML">HTML</a></li>
+          <li><a class="dropdown-item" href="#CSS">CSS</a></li>
+          <li><a class="dropdown-item" href="#JS">JAVASCRIPT</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="#UI">UI / UX</a></li>
         </ul>
-    </nav>
-    <header>
+      </li>
+      <li class="nav-item">
+        <!-- REPLACE THIS WITH AN EMBEDDED PDF IN NEW HTML PAGE -->
+        <a class="nav-link" href="./assets/pdf -CV/RHariri-CV2023.pdf">CV (pdf link)</a>
+        <!-- link to pdf is crude and destroys navigation (might be more appropriate in footer) -->
+      </li>
+      <li class="nav-item">
+        <!-- this would be good to link to a modal with a form for sending a message -->
+        <a class="nav-link" href="#?#">Contact Me</a>
+        <!-- demonstrate js database and other coding skills -->
+      </li>
+      <li>
+        <!-- element should be justify-content-end but does not work - return to later  -->
+        <img class="d-inline-flex justify-content-end  logo" src="assets/images/logo.png"
+          alt="Hariri phonetic pronounciation = Ha-Ree-Ree" />
+      </li>
+    </ul>
+  </nav>
+  <header>
+    <!-- Jumbotron element -->
+    <div class="p-5 mb-4 bg-body-tertiary JumboBG">
+      <div class="container-fluid py-5 jumboCopy">
+        <h1 class="display-5 fw-bold">Welcome to the portfolio of Richard Hariri</h1>
+        <p class="col-md-12 fs-4">within, we will find a demonstration of various techniques and skills developed within
+          the UoB front end web development and UX bootcamp course</p>
+        <button class="btn btn-primary btn-lg" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">See what I can do</button>
+      </div>
+    </div>
+  </header>
 
-    </header>
-    <main>
+  <main>
+    <!-- about-me section -->
+    <section id="about-me" class="container-fluid">
+      <div class="row">
+        <div class="cardContainer col-lg-3 col-md-3 col-sm-3">
+          <h2>About Me</h2>
+        </div>
+        <div class="cardContainer col-lg-9 col-md-9 col-md-9">
+          <p>
+            studied graphic design and photography in early 20's, but fell into the office hardware repair industry. Due to recent health complications, looking to restructure my life into a skill that allows creative freedoms and doesn't tie my place of work into various locations across the country.
+          </p>
+        </div>
+      </div>
+    </section>
 
-    </main>
-    <footer>
+    <!-- work section -->
+    <!-- first "title" card  -->
+    <section id="HTML" class="container-fluid">
+      <div class="row">
+        <div class="cardContainer col-lg-3 col-md-3 col-sm-3">
+          <h2>Work</h2>
+        </div>
+        <div class="cardContainer col-lg-9 col-md-9 col-md-9">
+          <div class="cardContainer col-lg-12 col-md-12 col-sm-12">
+            <div class="card">
+              <img src="./assets/images/02-portfolio-1.jpg" class="card-img-top firstimg" alt="...">
+              <div class="card-body">
+                <h4 class="card-title">HTML</h4>
+                <a href="#" class="btn btn-primary">VIEW</a>
+                <p class="card-text">A collection of HTML skills and notes </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    </footer>
+      <!-- this creates an invisible side section to align all grid elements  to right -->
+      <section class="row container-fluid">
+        <div class="cardContainer col-lg-3 col-md-3 col-sm-3">
+        </div>
+        <!-- further cards grouped into smaller sections  -->
+        <div class="cardContainer col-lg-9 col-md-9 col-md-9 row">
+          <div class="cardContainer col-lg-3 col-md-6 col-sm-12">
+            <div class="card">
+              <img src="./assets/images/02-portfolio-3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title"  id="CSS">CSS</h4>
+                <a href="#" class="btn btn-primary">VIEW</a>
+                <p class="card-text">An example of CSS skills</p>
+              </div>
+            </div>
+          </div>
+          <div class="cardContainer col-lg-3 col-md-6 col-sm-12">
+            <div class="card">
+              <img src="./assets/images/02-portfolio-4.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title"  id="JS">Javascript</h4>
+                <a href="#" class="btn btn-primary">VIEW</a>
+                <p class="card-text">An example of Javascript skills</p>
+              </div>
+            </div>
+          </div>
+          <div class="cardContainer col-lg-3 col-md-6 col-sm-12">
+            <div class="card">
+              <img src="./assets/images/02-portfolio-2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title" id="UI">UI</h4>
+                <a href="#" class="btn btn-primary">VIEW</a>
+                <p class="card-text">An example of HTML / CSS skills </p>
+              </div>
+            </div>
+          </div>
+          <div class="cardContainer col-lg-3 col-md-6 col-sm-12">
+            <div class="card">
+              <img src="./assets/images/bamboo.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title">UX</h4>
+                <a href="#" class="btn btn-primary">VIEW</a>
+                <p class="card-text">An example of HTML / CSS skills </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- skills section -->
+      <section id="Skills" class="container-fluid">
+        <div class="row">
+          <div class="cardContainer col-lg-3 col-md-3 col-sm-3">
+            <h2>Skills</h2>
+          </div>
+          <div class="cardContainer col-lg-9 col-md-9 col-md-9">
+            <p>I hope to gain a better understanding of structure and correct syntax to layout code in both a working
+              and organised way. With these skills I hope to cut down on time wasted just "trying" things until they
+              work and be able to know what the correct element or syntax i need to use is.</p>
+          </div>
+        </div>
+      </section>
+  </main>
+  <!-- footer section  -->
+  <footer>
+    <div class="card text-center">
+      <div class="card-header">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">This concludes the starter page</h5>
+        <p class="card-text">Thank You for viewing my introduction to front end development</p>
+      </div>
+      <div class="card-footer text-body-secondary">
+        &#169; Richard Hariri 2023
+      </div>
+    </div>
+  </footer>
 </body>
+
 </html>
