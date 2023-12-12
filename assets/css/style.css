@@ -1,11 +1,53 @@
+
+/* embedded logo within navbar */
 .logo {
     max-height: 45px;
+    border: 2px solid bisque;
     border-radius: 14px;
-    display: inline-block;
     padding: 1%;
     list-style-type: none;
+    box-shadow: 0 0 5px dodgerblue;
+    margin: 2px auto;
 }
 
-.justify-logo {
-    justify-content: end;
+/* jumbotron background and text styling */
+.JumboBG {
+    background-image:url(../images/winter.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: inset 0 2000px rgba(0, 0, 0, 0.6);
+    color: antiquewhite;
+    text-shadow: 0 0 20px black;
+}
+
+/* custom CSS to prevent HTML/CSS title card img being too large  */
+.firstimg {
+    max-height: 250px;
+}
+
+/* an attempt to make the button sit on top of img */
+/* .button {
+    z-index: 1;
+    margin-top: -20%;
+} */
+
+/* resize cards regardless of img dimensions to uniform size */
+.card-img-top {
+    height: 200px;
+}
+
+/* custom styling for the footer */
+.card-footer .card-header {
+    background-color: blue;
+    border: 5px solid red;
+}
+
+/* hover on button to give box-shadow effect  */
+.btn:hover {
+    box-shadow: 0 0 20px blue;
+}
+
+.cardContainer:first-child {
+    margin-bottom: 20px;
 }
