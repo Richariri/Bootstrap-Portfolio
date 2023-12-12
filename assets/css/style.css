@@ -21,6 +21,10 @@
     text-shadow: 0 0 20px black;
 }
 
+a:after {
+    color: black;
+}
+
 /* custom CSS to prevent HTML/CSS title card img being too large  */
 .firstimg {
     max-height: 250px;
@@ -36,18 +40,43 @@
 .card-img-top {
     height: 200px;
 }
-
+/* 
 /* custom styling for the footer */
-.card-footer .card-header {
+/* .card-footer .card-header {
     background-color: blue;
     border: 5px solid red;
+} */ */
+
+/* hover on button to give box-shadow or underline effect  */
+.btn:hover {
+    box-shadow: 0 0 15px rgb(3, 3, 110);
+}
+.nav-item a:hover {
+    text-decoration: underline;
+    font-size: large;
 }
 
-/* hover on button to give box-shadow effect  */
-.btn:hover {
-    box-shadow: 0 0 20px blue;
+/* adds spacing on footer to seperate from main content */
+.card-header {
+    margin-top: 5%;
 }
 
 .cardContainer:first-child {
     margin-bottom: 20px;
+}
+
+nav a:visited {
+    color: antiquewhite;
+}
+
+nav {
+    background-image: url(../images/sparkly\ background.gif);
+    background-position: center;
+    background-repeat: none;
+    box-shadow: inset 0 2000px rgba(0, 0, 0, 0.6);
+    color: antiquewhite;
+}
+
+.cardContainer h2 {
+    text-align: right;
 }

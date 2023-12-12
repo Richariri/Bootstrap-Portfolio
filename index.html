@@ -21,15 +21,15 @@
 <body>
   <nav>
     <ul class="nav nav-tabs flex-row" style="width: 80%;">
-      <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#about-me">Portfolio</a>
+      <li class="nav-item nav">
+        <a id="top" class="nav-link active" aria-current="page" href="#about-me">Portfolio</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
           aria-expanded="false">Topics</a>
         <ul class="dropdown-menu">
           <!-- each link to section of this single page or as skills progress, a new html page focused on specific topic -->
-          <li><a class="dropdown-item" href="#Aboutme">About Me</a></li>
+          <li><a class="dropdown-item" href="#Aboutme">ABOUT ME</a></li>
           <li><a class="dropdown-item" href="#HTML">HTML</a></li>
           <li><a class="dropdown-item" href="#CSS">CSS</a></li>
           <li><a class="dropdown-item" href="#JS">JAVASCRIPT</a></li>
@@ -51,7 +51,7 @@
       </li>
       <li>
         <!-- element should be justify-content-end but does not work - return to later  -->
-        <img class="d-inline-flex justify-content-end  logo" src="assets/images/logo.png"
+        <img class="d-inline-flex justify-content-end logo" src="assets/images/logo.png"
           alt="Hariri phonetic pronounciation = Ha-Ree-Ree" />
       </li>
     </ul>
@@ -59,7 +59,7 @@
   <header>
     <!-- Jumbotron element -->
     <div class="p-5 mb-4 bg-body-tertiary JumboBG">
-      <div class="container-fluid py-5 jumboCopy">
+      <div class="container-fluid py-5">
         <h1 class="display-5 fw-bold">Welcome to the portfolio of Richard Hariri</h1>
         <p class="col-md-12 fs-4">within, we will find a demonstration of various techniques and skills developed within
           the UoB front end web development and UX bootcamp course</p>
@@ -70,7 +70,7 @@
 
   <main>
     <!-- about-me section -->
-    <section id="about-me" class="container-fluid">
+    <section id="Aboutme" class="container-fluid">
       <div class="row">
         <div class="cardContainer col-lg-3 col-md-3 col-sm-3">
           <h2>About Me</h2>
@@ -108,7 +108,7 @@
       <section class="row container-fluid">
         <div class="cardContainer col-lg-3 col-md-3 col-sm-3">
         </div>
-        <!-- further cards grouped into smaller sections  -->
+        <!-- CSS card  -->
         <div class="cardContainer col-lg-9 col-md-9 col-md-9 row">
           <div class="cardContainer col-lg-3 col-md-6 col-sm-12">
             <div class="card">
@@ -120,6 +120,7 @@
               </div>
             </div>
           </div>
+          <!-- JS card  -->
           <div class="cardContainer col-lg-3 col-md-6 col-sm-12">
             <div class="card">
               <img src="./assets/images/02-portfolio-4.jpg" class="card-img-top" alt="...">
@@ -130,28 +131,31 @@
               </div>
             </div>
           </div>
+          <!-- UI card  -->
           <div class="cardContainer col-lg-3 col-md-6 col-sm-12">
             <div class="card">
               <img src="./assets/images/02-portfolio-2.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h4 class="card-title" id="UI">UI</h4>
                 <a href="#" class="btn btn-primary">VIEW</a>
-                <p class="card-text">An example of HTML / CSS skills </p>
+                <p class="card-text">User Interface examples</p>
               </div>
             </div>
           </div>
+          <!-- UX card -->
           <div class="cardContainer col-lg-3 col-md-6 col-sm-12">
             <div class="card">
               <img src="./assets/images/bamboo.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h4 class="card-title">UX</h4>
                 <a href="#" class="btn btn-primary">VIEW</a>
-                <p class="card-text">An example of HTML / CSS skills </p>
+                <p class="card-text">examples that focus on the  user experience</p>
               </div>
             </div>
           </div>
         </div>
       </section>
+
       <!-- skills section -->
       <section id="Skills" class="container-fluid">
         <div class="row">
@@ -166,10 +170,12 @@
         </div>
       </section>
   </main>
+
   <!-- footer section  -->
   <footer>
-    <div class="card text-center">
+    <div class="card text-center nav">
       <div class="card-header">
+        <a href="#top">Return to top</a>
       </div>
       <div class="card-body">
         <h5 class="card-title">This concludes the starter page</h5>
