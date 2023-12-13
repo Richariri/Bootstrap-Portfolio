@@ -23,13 +23,32 @@ nav {
     color: antiquewhite;
 }
 
+/* retains white font in navbar  */
+nav a:visited {
+    color: antiquewhite;
+}
+nav a::before {
+    color: antiquewhite;
+}
+nav a::after {
+    color: antiquewhite;
+}
+/* ISSUE - while selected reverts to default  */
+nav a:hover {
+    color: antiquewhite
+}
+
 /* keeps font in contrast for dropdown items */
 .dropdown-menu {
+    color: black;
+}
+.dropdown-menu a:hover {
     color: black;
 }
 .dropdown-menu a:visited {
     color: black;
 }
+/* END OF NAVBAR CSS  */
 
 /* jumbotron background and text styling */
 .JumboBG {
@@ -60,7 +79,7 @@ nav {
 .nav-item a:hover {
     text-decoration: underline;
     font-size: large;
-    color: none;
+    color: antiquewhite;
 }
 
 /* adds spacing on footer to seperate from main content */
@@ -71,17 +90,6 @@ nav {
 /* creates space between each card */
 .cardContainer:first-child {
     margin-bottom: 20px;
-}
-
-/* retains white font in navbar  */
-nav a:visited {
-    color: antiquewhite;
-}
-nav a::before {
-    color: antiquewhite;
-}
-nav {
-    color: antiquewhite
 }
 
 /* aligns side headings to right  */
