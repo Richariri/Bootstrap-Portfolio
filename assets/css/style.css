@@ -1,3 +1,8 @@
+/* this container ID adds white space all around the content  */
+#pageContainer {
+    width: 85%;
+    margin: auto;
+}
 
 /* embedded logo within navbar */
 .logo {
@@ -6,8 +11,21 @@
     border-radius: 14px;
     padding: 1%;
     list-style-type: none;
-    box-shadow: 0 0 5px dodgerblue;
     margin: 2px auto;
+}
+
+/* background for navbar */
+nav {
+    background-image: url(../images/sparkly\ background.gif);
+    background-position: center;
+    background-repeat: none;
+    box-shadow: inset 0 2000px rgba(0, 0, 0, 0.6);
+    color: antiquewhite;
+}
+
+/* keeps font in contrast for dropdown items */
+.dropdown-menu ul {
+    color: black;
 }
 
 /* jumbotron background and text styling */
@@ -21,15 +39,6 @@
     text-shadow: 0 0 20px black;
 }
 
-a:after {
-    color: black;
-}
-
-/* custom CSS to prevent HTML/CSS title card img being too large  */
-.firstimg {
-    max-height: 250px;
-}
-
 /* an attempt to make the button sit on top of img */
 /* .button {
     z-index: 1;
@@ -40,16 +49,16 @@ a:after {
 .card-img-top {
     height: 200px;
 }
-/* 
+
 /* custom styling for the footer */
 /* .card-footer .card-header {
     background-color: blue;
     border: 5px solid red;
 } */ */
 
-/* hover on button to give box-shadow or underline effect  */
+/* hover on button to give box-shadow or underline effect in nav  */
 .btn:hover {
-    box-shadow: 0 0 15px rgb(3, 3, 110);
+    box-shadow: 0 0 25px rgb(3, 3, 110);
 }
 .nav-item a:hover {
     text-decoration: underline;
@@ -61,22 +70,17 @@ a:after {
     margin-top: 5%;
 }
 
+/* creates space between each card */
 .cardContainer:first-child {
     margin-bottom: 20px;
 }
 
+/* retains white font in navbar after following a link  */
 nav a:visited {
     color: antiquewhite;
 }
 
-nav {
-    background-image: url(../images/sparkly\ background.gif);
-    background-position: center;
-    background-repeat: none;
-    box-shadow: inset 0 2000px rgba(0, 0, 0, 0.6);
-    color: antiquewhite;
-}
-
+/* aligns side headings to right  */
 .cardContainer h2 {
     text-align: right;
 }
