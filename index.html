@@ -23,7 +23,7 @@
     <nav>
       <ul class="nav nav-tabs flex-row" style="width: 100%;">
         <li class="nav-item nav">
-          <a id="top" class="nav-link active" aria-current="page" href="#about-me">Portfolio</a>
+          <a id="top" class="nav-link" aria-current="page" href="#about-me">Portfolio</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
@@ -76,7 +76,7 @@
       <!-- about-me section -->
       <section id="Aboutme" class="container-fluid">
         <div class="row">
-          <div class="cardContainer col-lg-3 col-md-3 col-sm-3">
+          <div class="col-sm-3 cardContainer">
             <h2>About Me</h2>
           </div>
           <div class="cardContainer col-lg-9 col-md-9 col-md-9">
@@ -93,7 +93,7 @@
       <!-- first "title" card  -->
       <section id="HTML" class="container-fluid">
         <div class="row">
-          <div class="cardContainer col-lg-3 col-md-3 col-sm-3">
+          <div class="col-sm-3 cardContainer">
             <h2>Work</h2>
           </div>
           <div class="cardContainer col-lg-9 col-md-9 col-md-9">
@@ -113,54 +113,56 @@
           <!-- this creates an invisible side section to align all grid elements  to right -->
           <section class=" container-fluid">
             <div class="row">
-              <div class="cardContainer col-lg-3 col-md-3 col-sm-3">
+              <div class="col-sm-3 cardContainer">
                 <!-- no text  -->
               </div>
               <!-- CSS card  -->
-              <div class="cardContainer col-lg-9 col-md-9 col-md-9 row">
-                <div class="cardContainer col-lg-3 col-md-6 col-sm-12">
-                  <div class="card">
-                    <img src="./assets/images/02-portfolio-3.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h4 class="card-title" id="CSS">CSS</h4>
-                      <a href="#" class="btn btn-primary">VIEW</a>
-                      <p class="card-text">An example of CSS skills</p>
+              <div class="col-sm-9 cardContainer">
+                  <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-3 cardContainer">
+                      <div class="card">
+                        <img src="./assets/images/02-portfolio-3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h4 class="card-title" id="CSS">CSS</h4>
+                          <a href="#" class="btn btn-primary">VIEW</a>
+                          <p class="card-text">An example of CSS skills</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- JS card  -->
+                    <div class="col-sm-12 col-md-6 col-lg-3 cardContainer">
+                      <div class="card">
+                        <img src="./assets/images/02-portfolio-4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h4 class="card-title" id="JS">Javascript</h4>
+                          <a href="#" class="btn btn-primary">VIEW</a>
+                          <p class="card-text">An example of JS skills</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- UI card  -->
+                    <div class="col-sm-12 col-md-6 col-lg-3 cardContainer">
+                      <div class="card">
+                        <img src="./assets/images/02-portfolio-2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h4 class="card-title" id="UI">UI</h4>
+                          <a href="#" class="btn btn-primary">VIEW</a>
+                          <p class="card-text">User Interface examples</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- UX card -->
+                    <div class="col-sm-12 col-md-6 col-lg-3 cardContainer">
+                      <div class="card">
+                        <img src="./assets/images/bamboo.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h4 class="card-title">UX</h4>
+                          <a href="#" class="btn btn-primary">VIEW</a>
+                          <p class="card-text">focus on user experience</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <!-- JS card  -->
-                <div class="cardContainer col-lg-3 col-md-6 col-sm-12">
-                  <div class="card">
-                    <img src="./assets/images/02-portfolio-4.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h4 class="card-title" id="JS">Javascript</h4>
-                      <a href="#" class="btn btn-primary">VIEW</a>
-                      <p class="card-text">An example of JS skills</p>
-                    </div>
-                  </div>
-                </div>
-                <!-- UI card  -->
-                <div class="cardContainer col-lg-3 col-md-6 col-sm-12">
-                  <div class="card">
-                    <img src="./assets/images/02-portfolio-2.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h4 class="card-title" id="UI">UI</h4>
-                      <a href="#" class="btn btn-primary">VIEW</a>
-                      <p class="card-text">User Interface examples</p>
-                    </div>
-                  </div>
-                </div>
-                <!-- UX card -->
-                <div class="cardContainer col-lg-3 col-md-6 col-sm-12">
-                  <div class="card">
-                    <img src="./assets/images/bamboo.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h4 class="card-title">UX</h4>
-                      <a href="#" class="btn btn-primary">VIEW</a>
-                      <p class="card-text">focus on user experience</p>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </section>
@@ -169,10 +171,10 @@
         <!-- skills section -->
         <section id="Skills" class="container-fluid">
           <div class="row">
-            <div class="cardContainer col-lg-3 col-md-3 col-sm-3">
+            <div class="col-sm-3 cardContainer">
               <h2>Skills</h2>
             </div>
-            <div class="cardContainer col-lg-9 col-md-9 col-md-9">
+            <div class="col-md-9 col-lg-9 cardContainer">
               <p>I hope to gain a better understanding of structure and correct syntax to layout code in both a working
                 and organised way. With these skills I hope to cut down on time wasted just "trying" things until they
                 work and be able to know what the correct element or syntax i need to use is.</p>
