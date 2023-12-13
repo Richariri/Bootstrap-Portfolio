@@ -24,7 +24,10 @@ nav {
 }
 
 /* keeps font in contrast for dropdown items */
-.dropdown-menu ul {
+.dropdown-menu {
+    color: black;
+}
+.dropdown-menu a:visited {
     color: black;
 }
 
@@ -50,19 +53,14 @@ nav {
     height: 200px;
 }
 
-/* custom styling for the footer */
-/* .card-footer .card-header {
-    background-color: blue;
-    border: 5px solid red;
-} */ */
-
 /* hover on button to give box-shadow or underline effect in nav  */
-.btn:hover {
+.btn :hover {
     box-shadow: 0 0 25px rgb(3, 3, 110);
 }
 .nav-item a:hover {
     text-decoration: underline;
     font-size: large;
+    color: none;
 }
 
 /* adds spacing on footer to seperate from main content */
@@ -75,9 +73,15 @@ nav {
     margin-bottom: 20px;
 }
 
-/* retains white font in navbar after following a link  */
+/* retains white font in navbar  */
 nav a:visited {
     color: antiquewhite;
+}
+nav a::before {
+    color: antiquewhite;
+}
+nav {
+    color: antiquewhite
 }
 
 /* aligns side headings to right  */
